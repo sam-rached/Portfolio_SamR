@@ -60,7 +60,6 @@
           <h2>Je suis <b>Sam</b>, jeune développeur web</h2>
           <div class="contentTyped">
             <p>Après avoir passé plus de vingt ans dans le secteur audiovisuel, passionné par les nouvelles technologies, j’ai souhaité découvrir le monde informatique et plus particulièrement le développement web.","En novembre 2021, j'ai ainsi suivi une formation intensive de 5 mois en développement web et web mobile à l'école Wild Code School. Aujourd’hui, je suis à la recherche d’un poste de Développeur web en alternance pour une durée d’un an et obtenir le Titre professionnel de Concepteur Développeur d’Applications à l’issue de la formation.</p>
-          
           </div>
           <div class="heading bottom">
             <a href="assets/SamirRached_CV2.pdf"  target="_blank" class="btnCV"
@@ -290,17 +289,17 @@
           </div>
         </div>
         <div class="formBx">
-          <form>
+          <form id="contact-form">
             <h3>Contactez-moi</h3>
-            <input type="text" placeholder="Nom" name="name" />
-            <input type="email" placeholder="Email" name="email" />
+            <input type="text" placeholder="Votre nom" id="name" name="name" />
+            <input type="email" placeholder="Votre email" id="email" name="email" />
             <textarea
-              name=""
+              name="message"
               rows="6"
-              id=""
+              id="message"
               placeholder="Votre Message"
             ></textarea>
-            <input type="submit" value="Envoyer" name="" />
+            <input onclick="clearForm()" type="submit" value="Envoyer"/>
           </form>
         </div>
       </div>
@@ -310,6 +309,10 @@
     <footer class="copyright">
       <p>&copy; SamR 2022</p>
     </footer>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript" src="./js/email.js"></script>
     <script src="./js/typed.min.js" text="text/javascript"></script>
     <script src="./js/index.js" type="text/javascript"></script>
   </body>
