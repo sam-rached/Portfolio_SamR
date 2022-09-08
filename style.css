@@ -239,6 +239,7 @@ img {
   max-width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.4);
   cursor: pointer;
+  transition:0.3s ease-out
 }
 .work .content .workBx img:hover {
   box-shadow: 0 0 20px 5px #ccc;
