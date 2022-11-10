@@ -24,6 +24,8 @@ window.onload = function () {
 };
 
 function clearForm() {
- document.getElementById("contact-form").reset();
+  setTimeout(()=>
+  document.getElementById("contact-form").reset(),100
+  )
 }
 
