@@ -15,6 +15,10 @@ let typed = new Typed(".typed", {
   strings: ["Développeur Web Junior"],
   typeSpeed: 45,
   backSpeed: 5,
-  smartBackspace: true, 
+  smartBackspace: true,
   loop: false,
 });
+
+
+
+
