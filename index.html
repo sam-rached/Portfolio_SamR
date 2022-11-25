@@ -21,7 +21,7 @@
   <body>
     <!-- Creating Menu Tabs & Logo at Top Using HTML -->
     <header>
-      <a href="#" class="logo">PortFolio</a>
+      <a href="#about" class="logo"><div class="imgLogo"></div>PORTFOLIO</a>
       <div class="toggle" onclick="toggleMenu();"></div>
       <ul class="menu">
         <li><a href="#home" onclick="toggleMenu();">Accueil</a></li>
@@ -46,7 +46,7 @@
       </div>
       <div class="textBx">
         <div class="button">
-          <a href="#about" class="btn">A propos de moi</a>
+          <a href="#about" class="btn">plus d'infos...</a>
           <svg height="55" width="250">
             <rect class="button__rect" height="55" width="250" />
           </svg>
@@ -57,11 +57,11 @@
     <!-- Creating About Me Layout in HTML -->
     <section class="about" id="about">
       <div class="heading">
-        <h2>A propos de moi</h2>
+        <h2>A propos</h2>
       </div>
-      <div class="content">
+      <div  class="content">
         <div class="w50">
-          <img src="images/pic_sam_500.png" alt="" class="proPic" />
+          <img src="images/sam_detoure.png" alt="my head" class="proPic" />
         </div>
         <div class="contentBx w50">
           <h3>Qui suis-je ?</h3>
@@ -73,10 +73,7 @@
               le monde informatique et plus particulièrement le développement
               web. En novembre 2021, j'ai ainsi suivi une formation intensive de
               5 mois en développement web et web mobile à l'école Wild Code
-              School. Aujourd’hui, je suis à la recherche d’un poste de
-              Développeur web en alternance pour une durée d’un an et obtenir le
-              Titre professionnel de Concepteur Développeur d’Applications à
-              l’issue de la formation.
+              School. Aujourd’hui, je suis officiellement Développeur web et web mobile.
             </p>
           </div>
           <div class="heading bottom">
@@ -100,7 +97,7 @@
     <section class="services" id="services">
       <div class="heading white">
         <h2>Mes compétences</h2>
-        <p>Mes compétences aux services du client</p>
+        <p class="dark">Aux services du client</p>
       </div>
       <div class="content">
         <div class="servicesBx">
@@ -274,6 +271,12 @@
             <p>Projet Prev33 - React/Node/MySql 2022</p>
           </a>
         </div>
+        <div class="workBx">
+          <a href="https://marvel-quiz-ef6c3.web.app/" target="_blank">
+            <img src="images/Marvel_Quiz.jpg" alt="" />
+            <p>Application proposée par DonkeyGeek dans sa formation 'React JS pour tous que j'ai suivi - ReactJS/Firebase 2022</p>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -301,7 +304,7 @@
             N'hésitez pas à partager sa recherche au sein de votre réseau et à
             le contacter si vous recrutez en alternance.
           </p>
-          <h3>Juliette Mahé<br />Développeuse Web Junior</h3>
+          <h3>Juliette Mahé<br />Développeur Web Junior</h3>
         </div>
       </div>
     </section>
@@ -310,7 +313,7 @@
 
     <section class="contact" id="contact">
       <div class="heading white">
-        <h2>Rentrons en contact</h2>
+        <h2>Contactez-moi</h2>
       </div>
       <div class="content">
         <div class="contactInfo">
@@ -376,7 +379,6 @@
         </div>
         <div class="formBx">
           <form id="contact-form">
-            <h3>Contactez-moi</h3>
             <input type="text" placeholder="Votre nom" id="name" name="name" />
             <input
               type="email"

@@ -12,13 +12,12 @@ function toggleMenu() {
 
 //TYPED
 let typed = new Typed(".typed", {
-  strings: ["Développeur Web Junior"],
+  strings: ["Développeur Web"],
   typeSpeed: 45,
   backSpeed: 5,
   smartBackspace: true,
   loop: false,
 });
-
 
 
 
