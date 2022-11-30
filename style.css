@@ -103,7 +103,7 @@ section {
   position: relative;
   min-height: 100vh;
   background: var(--text-color-lightdark);
-  background: url(images/BG_LOGO.png);
+  background: url(images/BG_LOGO.jpg);
   background-size: cover;
   background-position: right;
   display: flex;
