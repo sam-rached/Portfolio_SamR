@@ -10,6 +10,19 @@ function toggleMenu() {
   menu.classList.toggle("active");
 }
 
+//action ouverture / fermeture details
+const details = document.querySelectorAll("details");
+
+details.forEach((targetDetail) => {
+  targetDetail.addEventListener("click", () => {
+    details.forEach((detail) => {
+      if (detail !== targetDetail) {
+        detail.removeAttribute("open");
+      }
+    });
+  });
+});
+
 //TYPED
 let typed = new Typed(".typed", {
   strings: ["Développeur Web"],

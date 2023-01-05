@@ -241,9 +241,14 @@ img {
 
 .services {
   background: url("/images/bg-work.png") no-repeat center;
+  min-height: 600px;
 }
 .heading.white p {
   color: var(--text-color-light);
+}
+
+details p{
+  font-size:calc(1vmin + 7px);
 }
 
 summary {
@@ -251,9 +256,10 @@ summary {
   flex-direction: column;
   user-select: none;
   list-style: none;
-  font-size: 1.4rem;
+  font-size: calc(1.2vmin + 10px);
   font-weight: 700;
   padding: 20px;
+  align-items: center;
 }
 
 details summary::after {
@@ -276,9 +282,10 @@ details[open] summary::after {
   color: var(--text-color-light);
   background: #161616;
   padding: 15px 15px;
-  max-width: 360px;
+  max-width: 25vw;
   margin: 10px 15px;
   text-align: center;
+  border-radius: 10px;
 }
 .services .content .servicesBx:hover {
   border-bottom: 2px solid var(--theme-color-logo);
@@ -306,6 +313,7 @@ details[open] summary::after {
   border: 1px solid rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition: 0.3s ease-out;
+  border-radius: 10px;
 }
 .work .content .workBx img:hover {
   box-shadow: 0 0 20px 5px #ccc;
@@ -542,6 +550,7 @@ footer.copyright {
   }
   .banner {
     padding: 150px 50px 100px;
+    background-position: center;
   }
   .banner h2 {
     font-size: 1.5em;
@@ -596,7 +605,9 @@ footer.copyright {
 }
 
 @media (max-width: 768px) {
-
+.textBx {
+    top: 300px;
+  }
   .testimonial .content .testimonialBx {
     max-width: calc(100% - 20px);
     padding: 40px 20px;
@@ -612,8 +623,7 @@ footer.copyright {
 
 @media (max-width: 600px) {
 
-    .container-logo{
-
+  .container-logo{
   width:210px;
 }
 
@@ -664,6 +674,7 @@ font-size: 18px;
   .textBx {
     top: 300px;
   }
+
   .testimonial .content .testimonialBx {
     max-width: calc(100% - 20px);
     padding: 40px 20px;
